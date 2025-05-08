@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'Tagesschrift';
+    src: url(fonts/Tagesschrift-Regular.ttf);
+}
+body {
+    font-family: 'Tagesschrift', sans-serif;
+}
+#signUp{
+    background-color: rgb(48, 143, 226);
+    color: white;
+}
