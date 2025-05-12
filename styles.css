@@ -38,7 +38,8 @@ body {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
-    padding: 10px;
+    /* padding: 10px; */
+    padding-bottom: 10px;
     margin-top: 33.25vh;
 }
 
@@ -58,26 +59,28 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 30vh;
-    /* align-items: center; */
 }
 
 #welcomeMessage {
-    margin: 20px;
-    font-size: 1rem;
+    /* background-color: aquamarine; */
+    margin: 30px;
+    /* margin-top: 20px; */
+    margin-right: 30%;
+    font-size: 1.4rem;
 }
 #welcomeMessage2 {
-    margin: 20px;
+    /* background-color: #77cf33; */
+    margin-left: 30px;
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 
 /* Sign Up Section */
 #signUpSection {
-    background-color: rgb(255, 255, 255);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     font-family: 0.5rem;
-    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+    
 }
 
 .form-block {
@@ -85,16 +88,19 @@ body {
     justify-content: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 10px;
     margin-left: 50px;
+    margin-right: 50px;
 }
-#form {
+
+#formDiv {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .form-block input{
-    width: 200px;
     height: 23px;
     font-size: 1.2rem;
     border: solid 1px;
@@ -102,11 +108,15 @@ body {
     border-radius: 3px;
 }
 
-#formDiv {
-    padding-right: 50px;
-}
 .form-block input:focus {
-    border-color: red;
+    outline: 2px solid rgb(0, 140, 255);
+    box-shadow: 2px 2px 3px;
+}
+.form-block input:invalid {
+    outline: 2px solid rgb(202, 10, 10);
+}
+.form-block input:valid {
+    outline: 2px solid rgb(36, 202, 10);
 }
 
 
@@ -114,20 +124,23 @@ body {
 #button {
     background-color: #aba161;
     color: white;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     padding: 10px;
     border-radius: 8px;
     border: none;
     width: 150px;
+    height: 50px;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
     margin-top: 40px;
     margin-left: 40px;
+    font-family: 'Tagesschrift', sans-serif;
 }
-#buttonSection {
-    display: flex;
-    flex-direction: column;
-    
-    /* height: 40vh; */
+#button:hover {
+    background-color: #dacb6c;
+}
+#button:active {
+    width: 145px;
+    height: 45px;
+    background-color: #77cf33;
 }
 
 #logIn {

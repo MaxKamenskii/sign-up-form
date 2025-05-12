@@ -25,45 +25,41 @@
                 </div>
             </div>
             <div id="signUpSection">
-                <div id="formDiv">
-                    <form id="form">
-                        <div class="form-block">
-                            <label for='first-name'>First name</label>
-                            <input id='first-name' name='first-name' type='text'/>
+                <form id="form">
+                    
+                        <div id="formDiv">
+                            <div class="form-block">
+                                <label for='first-name'>First name</label>
+                                <input id='first-name' name='first-name' type='text' required/>
+                            </div>
+                            <div class="form-block">
+                                <label for='last-name'>Last name</label>
+                                <input id='last-name' name='last-name' type='text' required/>
+                            </div>
+                            <div class="form-block">
+                                <label for='email'>Email</label>
+                                <input id='email' name='email' type='email' required/>
+                            </div>
+                            <div class="form-block">
+                                <label for="phone">Phone Number</label>
+                                <input id="phone" name="phone" type="tel" required>
+                            </div>
+                            <div class="form-block">
+                                <label for="password">Password</label>
+                                <input id="password" name="password" type="password" pattern=".{8,}" title="At least 8 symbols" required>
+                            </div>
+                            <div class="form-block">
+                                <label for="Confirm">Confirm Password</label>
+                                <input id="Confirm" name="Confirm" type="password" pattern=".{8,}" title="At least 8 symbols" required>
+                            </div>
                         </div>
-                        <div class="form-block">
-                            <label for='last-name'>Last name</label>
-                            <input id='last-name' name='last-name' type='text'/>
-                        </div>
-                        <div class="form-block">
-                            <label for='email'>Email</label>
-                            <input id='email' name='email' type='email'/>
-                        </div>
-                        <div class="form-block">
-                            <label for="phone">Phone Number</label>
-                            <input id="phone" name="phone" type="tel">
-                        </div>
-                        <div class="form-block">
-                            <label for="password">Password</label>
-                            <input id="password" name="password" type="password">
-                        </div>
-                        <div class="form-block">
-                            <label for="Confirm">Cofirm Password</label>
-                            <input id="Confirm" name="Confirm" type="password">
-                        </div>
-                         
-                    </form>
-                </div>
-                
-            </div>
-            <div id="buttonSection">
-                <button id="button">
-                    Create a mage's account
-                </button>
-                <div id="logIn">
-                    Already a mage? <span><a href="url">Log In</a></span>.
-                </div>
-                
+                        <button id="button">
+                            Create a mage's account
+                        </button>
+                        <div id="logIn">
+                            Already a mage? <span><a href="/index.html">Log In</a></span>.
+                        </div> 
+                </form>
             </div>
         </div>
     </div>
