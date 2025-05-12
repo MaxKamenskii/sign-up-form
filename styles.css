@@ -1,11 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }  
+
 @font-face {
     font-family: 'Tagesschrift';
     src: url(fonts/Tagesschrift-Regular.ttf);
 }
 body {
     font-family: 'Tagesschrift', sans-serif;
+    background-color: antiquewhite;
 }
-#signUp{
-    background-color: rgb(48, 143, 226);
+#container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+/* Image Block */
+#backgroundImage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(images/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+}
+#logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
     color: white;
+    padding: 10px;
+    margin-top: 33.25vh;
+}
+
+#logoImage {
+    height: 100px;
+}
+
+/* Main block  */
+#mainBlock {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+#welcomeBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    /* align-items: center; */
+}
+
+#welcomeMessage {
+    margin: 20px;
+    font-size: 1rem;
+}
+#welcomeMessage2 {
+    margin: 20px;
+    font-size: 1.2rem;
+}
+
+/* Sign Up Section */
+#signUpSection {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: row;
+    font-family: 0.5rem;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.5);
+}
+
+.form-block {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;
+    margin-left: 50px;
+}
+#form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.form-block input{
+    width: 200px;
+    height: 23px;
+    font-size: 1.2rem;
+    border: solid 1px;
+    border-color: #E5E7EB;
+    border-radius: 3px;
+}
+
+#formDiv {
+    padding-right: 50px;
+}
+.form-block input:focus {
+    border-color: red;
+}
+
+
+/* Button section */
+#button {
+    background-color: #aba161;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    border: none;
+    width: 150px;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+    margin-left: 40px;
+}
+#buttonSection {
+    display: flex;
+    flex-direction: column;
+    
+    /* height: 40vh; */
+}
+
+#logIn {
+    margin-top: 40px;
+    margin-left: 40px;
+}
+a:link {
+    color: #aba161;
 }
