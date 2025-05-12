@@ -112,10 +112,10 @@ body {
     outline: 2px solid rgb(0, 140, 255);
     box-shadow: 2px 2px 3px;
 }
-.form-block input:invalid {
+.form-block input:user-invalid {
     outline: 2px solid rgb(202, 10, 10);
 }
-.form-block input:valid {
+.form-block input:user-valid {
     outline: 2px solid rgb(36, 202, 10);
 }
 
